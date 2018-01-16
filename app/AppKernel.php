@@ -35,7 +35,7 @@ class AppKernel extends Kernel
 
                 // Added for sapp
                 $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
-                $bundles[] = new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
+                $bundles[] = new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle();
             }
         }
 
