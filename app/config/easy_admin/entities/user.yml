@@ -1,0 +1,30 @@
+easy_admin:
+    entities:
+        User:
+            class: Sapp\Backend\Bundle\AdminBundle\Entity\User
+            list:
+                title: 'Customers'
+                fields:
+                    - id 
+                    - { property: 'enabled', type: 'boolean' }
+                    - username 
+                    - email 
+                    - { property: 'lastlogin', type: 'datetime' }
+            edit:
+                fields: 
+                    - email 
+                    - enabled
+                    - { property: 'plainPassword', type: 'text', type_options: { required: false }, label: 'Password' }
+                    - { property: 'roles', type: 'choice', type_options: { multiple: true, choices: { 'User': 'ROLE_USER', 'Admin': 'ROLE_ADMIN' } } }            
+            new:
+                fields:
+                    - { type: 'group', css_class: 'col-md-8', label: 'User Information' }
+                    - email
+                    - username
+                    - { type: 'group', css_class: 'col-md-4', label: 'Basic Setup' }
+                    - { property: 'enabled', label: 'Activate this user' }
+                    - { type: 'group', css_class: 'col-md-4', label: 'User Role' }
+                    - { property: 'roles', type: 'choice', type_options: { multiple: true, choices: { 'User': 'ROLE_USER', 'Admin': 'ROLE_ADMIN' } } }                    
+                    - { type: 'group', css_class: 'col-md-8', label: 'User Credential' } 
+                    - { property: 'plainPassword', type: 'text', type_options: { required: true }, label: 'Password' }
+

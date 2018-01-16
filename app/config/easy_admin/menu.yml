@@ -1,0 +1,12 @@
+easy_admin:
+    design:
+      menu:
+          - label: 'Dashboard'
+            icon: 'dashboard'
+            children:
+                - { label: 'Test', url: 'http://example.com/' }
+          - { label: 'Settings'}
+        
+          - { label: 'Users'}
+          - { label: 'menu.user', entity: 'User', icon: 'users' }     
+    

@@ -1,0 +1,5 @@
+easy_admin:
+    design:
+        brand_color: '#222222'
+        color_scheme: 'light'
+        form_theme: 'vertical'

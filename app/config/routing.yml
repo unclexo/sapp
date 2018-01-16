@@ -1,0 +1,10 @@
+sapp_frontend_frontend_bundle:
+    resource: "@SappFrontendFrontendBundle/Resources/config/routing/all.xml"
+
+easy_admin_bundle:
+    resource: "@SappBackendAdminBundle/Controller/AdminController.php"
+    type:     annotation
+    prefix:   /admin
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

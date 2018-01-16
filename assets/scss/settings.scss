@@ -1,0 +1,17 @@
+// This is for overriding bootstrap-defined colors and designs
+
+$brand-default:			black !default;
+$brand-primary:         mediumseagreen !default;
+$brand-success:         slateblue !default;
+$brand-info:            #009688 !default;
+$brand-warning:         orange !default;
+$brand-danger:          tomato !default;
+
+// Overrides default-button's design
+$btn-default-color:             #333 !default;
+$btn-default-bg:                $brand-default !default;
+$btn-default-border:			darken($brand-default, 5%) !default;
+
+// Overrides border radius
+$border-radius-none:			0px !default;
+$btn-border-radius-base:		$border-radius-none !default;
